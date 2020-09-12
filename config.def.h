@@ -96,9 +96,9 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
 /* DLSTATUS */
 #define DLSTATUS { \
         .v = (const char *[]){ "st", "-e", "/bin/sh", "-c",\
-            "while true; do cat $1/* 2>/dev/null || echo \"no hay descargas\";"\
+            "while true; do cat $1/* 2>/dev/null || echo \"no downloads\";"\
             "A=; read A; "\
-            "if [ $A = \"clean\" ]; then rm $1/*; fi; clear; done",\
+            "if [ $A = \"clear\" ]; then rm $1/*; fi; clear; done",\
             "surf-dlstatus", dlstatus, NULL } \
 }
 
