@@ -57,6 +57,10 @@ static UriParameters uriparams[] = {
 	}, },
 };
 
+static SearchEngine searchengines[] = {
+	{ "g", "https://www.google.com/search?q=%s" },
+};
+
 /* default window size: width, height */
 static int winsize[] = { 800, 600 };
 
