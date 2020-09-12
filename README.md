@@ -5,6 +5,7 @@ My patched version of [surf 2.0](https://surf.suckless.org).
 Dependencies:
 - Xorg
 - dmenu
+- st
 - mpv
 - webkit2gtk
 
