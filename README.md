@@ -13,3 +13,4 @@ Installed patches (can be found on surf's homepage):
 - searchengines
 - dlconsole
 - bookmarks
+- startgo

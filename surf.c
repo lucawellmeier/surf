@@ -2113,6 +2113,9 @@ main(int argc, char *argv[])
 		defconfig[Geolocation].val.i = 1;
 		defconfig[Geolocation].prio = 2;
 		break;
+	case 'h':
+		startgo = 1;
+		break;
 	case 'i':
 		defconfig[LoadImages].val.i = 0;
 		defconfig[LoadImages].prio = 2;
@@ -2206,6 +2209,12 @@ main(int argc, char *argv[])
 
 	loaduri(c, &arg);
 	updatetitle(c);
+
+	if (startgo) {
+		/* start directly into GO prompt */
+		Arg a = (Arg)SETPROP_GO("_SURF_URI", "_SURF_GO", PROMPT_GO);
+		spawn(c, &a);
+	}
 
 	gtk_main();
 	cleanup();
