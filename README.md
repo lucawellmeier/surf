@@ -10,3 +10,4 @@ Dependencies:
 - webkit2gtk
 
 Installed patches (can be found on surf's homepage):
+- startgo
