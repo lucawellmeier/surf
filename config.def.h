@@ -10,7 +10,7 @@ static char *dldir          = "~/dl/";
 static char *dlstatus       = "~/.surf/dlstatus/";
 
 /* enable to open GO prompt on startup */
-static int startgo = 0;
+static int startgo = 1;
 
 /* Webkit default features */
 /* Highest priority value will be used.
@@ -63,7 +63,7 @@ static UriParameters uriparams[] = {
 };
 
 static SearchEngine searchengines[] = {
-	{ "g", "https://www.google.com/search?q=%s" },
+	{ " ", "https://www.google.com/search?q=%s" },
 };
 
 /* default window size: width, height */
