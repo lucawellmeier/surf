@@ -10,7 +10,7 @@ static char *dldir          = "~/dl/";
 static char *dlstatus       = "~/.surf/dlstatus/";
 
 /* enable to open GO prompt on startup */
-static int startgo = 1;
+static int startgo = 0;
 
 /* Webkit default features */
 /* Highest priority value will be used.
