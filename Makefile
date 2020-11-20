@@ -24,6 +24,7 @@ options:
 	$(CC) $(SURFCFLAGS) $(CFLAGS) -c $<
 
 config.h:
+	rm -f $@
 	cp config.def.h $@
 
 $(OBJ): config.h common.h config.mk
